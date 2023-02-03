@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Index</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="bootstrap_4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap_4/js/bootstrap.js">
+  <link rel="stylesheet" href="bootstrap_4/js/bootstrap.min.js">
+    
+<!--  <link href="style.css" rel="stylesheet"> -->
+  <link href="myStyle.css" rel="stylesheet">
+
+</head>
+
+<body>
+  
+  <!-- navbar-expand-md navbar-dark bg-dark sticky-top-->
+  <div class="header"></div>
+  <!-- navbar-expand-md navbar-dark bg-dark sticky-top-->
+ <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+     <div class="container">
+       <a class="navbar-brand p-2" href="home.html">RedGis-Africa</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navi" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navi">
+         <ul class="col navbar-nav d-flex justify-content-end ">
+            <li class="nav-item p-2 menu-ind"><a class="nav-link text-white" href="index.html">Accueil</a></li>
+            <li class="nav-item p-2 menu-ind"><a class="nav-link text-white" href="geoportail.html">Geoportail</a></li>
+            <li class="nav-item p-2 menu-off"><a class="nav-link text-white" href="formations.html">Nos-Formations</a></li>
+            <li class="nav-item p-2 menu-sig"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+            <li class="nav-item p-2 menu-sig"><a class="nav-link text-white" href="compte.html">Compte</a></li>
+            <li class="nav-item p-2 menu-con"><a class="nav-link text-white" href="account.html">Contact</a></li>
+         </ul>
+     </div>  
+    </div>
+ </nav>
+
+  <!-- Debut section 1 -->
+  <section id="sec1" class="home">
+      <div class="container container-home">
+          <div class="row">
+              <div class="col-sm-12">
+                  <h3 class="text-sm-center mt-3">Bienvenue dans ce site d'apprentissage et d'analyse de données spatiales</h3>
+                  <br>
+                  <p>RedGis Africa, un cabinet de consultance qui offre des prestations de formations
+                      et d’étude dans le domaines de la géomatique, de l’environnement et du développement.
+                      Il met à disposition des données spatiales aux structures publiques et privées.
+                      Sa <a href="#">mission est de...</a></p>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Fin section 1 -->
+
+   <br> <br><br> <br>
+   <footer class="testmonials" id="testimonial">
+        <div class="container"><br> <br>
+            <div class="row">
+                 <div class="col-sm-12">
+                      <div id="carousel-testimonials"  class="carousel slide" data-ride="carousel"><br>
+                          <ul class="carousel-indicators">
+                              <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+                              <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+                              <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+                          </ul>
+                          <div class="carousel-inner">
+                              <div class="carousel-item active text-center">
+                                  <img src="images/1.png" alt="Image 1" class="center-block">
+                                  <h2>Mamadou Ndiaye</h2>
+                                  <h4>Sr Enginer</h4>
+                                  <p>
+                                      who is such a amn as does not want to get success <br>life is not meant for work 
+                                  </p>
+                              </div>
+                              <div class="carousel-item text-center">
+                                  <img src="images/2.png" alt="Image 2" class="center-block">
+                                  <h2>Saliou Pouye</h2>
+                                  <h4>Sr Enginer</h4>
+                                  <p>
+                                      who is such a amn as does not want to get success <br>life is not meant for work 
+                                  </p>
+                              </div>
+                              <div class="carousel-item text-center">
+                                  <img src="images/3.png" alt="Image 3" class="center-block">
+                                  <h2>Issa Seck</h2>
+                                  <h4>Sr Enginer</h4>
+                                  <p>
+                                      who is such a amn as does not want to get success <br>life is not meant for work  
+                                  </p>
+                              </div>
+                          </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+
+
+<script src="jquery.js"></script>
+<script src="bootstrap_4/js/bootstrap.js"></script>
+<script src="bootstrap_4/js/bootstrap.min.js"></script>
+
+   <script>
+    $(window).scroll(function(){
+        var top = $(window).scrollTop();
+        if(top>=60){
+            $("nav").addClass('secondary');
+        }
+        else
+            if($("nav").hasClass('secondary')){
+                $("nav").removeClass('secondary');
+            }
+    });
+    </script> 
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        }); 
+    </script>  
+</body>
+
+</html>
